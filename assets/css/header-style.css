@@ -1,0 +1,173 @@
+.header {
+  background-image: linear-gradient(180deg, #f53d2d, #ff6533);
+  /* height: 10rem; */
+}
+
+.navbar-list {
+  padding: 0;
+  color: var(--text-color);
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin-top: 7px;
+}
+
+.navbar-list > li {
+  display: inline-block;
+}
+
+.navbar-list > li > a {
+  color: var(--white-color);
+}
+
+.navbar-list > li:last-child {
+  padding-left: 10px;
+  border-left: 2px solid var(--text-hover-color__orange);
+}
+
+.navbar-list > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.navbar-list a:hover {
+  color: var(--text-hover-color__orange);
+}
+
+.download-app {
+  position: relative;
+}
+
+.QR-draw__position {
+  display: none;
+  width: 170px;
+  height: 200px;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  /* background-color: var(--white-color); */
+}
+
+.QR-container {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+}
+
+.QR-item__code {
+  width: 160px;
+  height: auto;
+  justify-content: center;
+  margin: 5px;
+}
+
+.QR-item__mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13px;
+  width: 100%;
+}
+
+.gg-play {
+  width: 70px;
+  height: auto;
+}
+
+.app-store {
+  width: 60px;
+  height: auto;
+}
+
+.download-app:hover .QR-draw__position {
+  display: block;
+}
+
+.header-search {
+  display: flex;
+  margin-top: 20px;
+}
+
+.header-search__logo {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: auto;
+}
+
+.lazada-logo {
+  width: 50px;
+  height: auto;
+}
+
+.header-search__searchbar {
+  height: 100%;
+  width: 100%;
+}
+
+.searchbar {
+  background-color: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+}
+
+.search-input {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: var(--white-color);
+}
+
+.search-button {
+  width: 80px;
+  height: 100%;
+  color: var(--white-color);
+  background-color: #fb6445;
+  border-radius: 7px;
+  border: 4px solid var(--white-color);
+}
+
+.suggest {
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 100%;
+  height: 40px;
+  color: var(--white-color);
+}
+
+.suggest-list {
+  padding: 0;
+}
+
+.suggest-list > li {
+  display: inline;
+  margin-right: 10px;
+  color: var(--white-color);
+}
+
+.suggest-list a {
+  color: var(--white-color);
+}
+
+.header-search__cart {
+  color: var(--white-color);
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search__cart > a {
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
