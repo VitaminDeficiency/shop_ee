@@ -134,8 +134,9 @@
 
 .search-input {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 10px;
+  border-radius: 3px;
   border: var(--white-color);
 }
 

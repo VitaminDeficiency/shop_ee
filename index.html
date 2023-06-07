@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header-style.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
     <title>Shop</title>
   </head>
   <body>
@@ -215,6 +216,58 @@
       </div>
 
       <footer class="footer"></footer>
+    </section>
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="auth-form">
+          <div class="form__header">
+            <h3 class="form__title">Đăng ký</h3>
+            <span class="swtch-btn"><a href="#">Đăng nhập</a></span>
+          </div>
+          <form class="form__body">
+            <div class="input-group">
+              <input
+                class="input__sign-in"
+                type="tel"
+                placeholder="Số điện thoại"
+              />
+              <input
+                class="input__sign-in"
+                type="text"
+                placeholder="Tạo mã ngẫu nhiên"
+              />
+              <input
+                class="input__sign-in"
+                type="text"
+                placeholder="Mã xác minh"
+              />
+            </div>
+            <div class="form__license">
+              <p>
+                Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                <a href="#">Điều khoản và dịch vụ</a> &
+                <a href="#">Chính sách bảo mật</a>
+              </p>
+            </div>
+            <div class="form__accept">
+              <button class="btn__back btn-primary">TRỞ LẠI</button>
+              <button class="btn__sign-in btn-primary">ĐĂNG KÝ</button>
+            </div>
+          </form>
+        </div>
+        <div class="form__footer">
+          <a class="social facebook-social" href="#">
+            <i class="social-icon fa-brands fa-square-facebook"></i>
+            <span class="social-label">Kết nối với Facebook</span>
+          </a>
+          <a class="social google-social" href="#">
+            <i class="social-icon fa-brands fa-google"></i>
+            <span class="social-label">Kết nối với Google</span>
+          </a>
+        </div>
+      </div>
     </section>
   </body>
 </html>

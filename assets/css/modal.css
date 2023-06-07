@@ -1,0 +1,129 @@
+.modal__overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.modal__container {
+  z-index: 6;
+  background-color: var(--white-color);
+  border-radius: 4px;
+}
+
+.auth-form {
+  width: 450px;
+  padding: 0px 30px;
+}
+
+.form__header {
+  margin: 25px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.swtch-btn > a {
+  margin: 0;
+  font-weight: 700;
+  color: var(--orange-color);
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  /* width: 100%; */
+}
+
+.input__sign-in {
+  font-size: 0.75rem;
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0;
+  border-radius: 4px;
+  border: 2px solid #dbdbdb;
+  outline: none;
+}
+
+.form__license {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.form__accept {
+  padding-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn__back {
+  margin-right: 5px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+.btn__back:hover {
+  color: var(--text-color);
+  background-color: #f3f3f3;
+}
+
+.btn__sign-in {
+  margin-bottom: 15px;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+
+.btn__sign-in:hover {
+  background-color: var(--orange-hover-color);
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: #f3f3f3;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+}
+
+.facebook-social {
+  width: 49%;
+  /* padding: 5px 10px; */
+  color: var(--white-color);
+  background-color: #33508d;
+}
+
+.google-social {
+  width: 49%;
+  /* padding: 5px 10px; */
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+.social-icon {
+  font-size: 1.5rem;
+}
+
+.social-label {
+  margin: auto;
+}
