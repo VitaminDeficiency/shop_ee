@@ -22,9 +22,16 @@
     <section class="app">
       <header class="header grid__row">
         <nav class="header-navbar grid">
-          <ul class="navbar-list float--left">
-            <li><a href="">Kênh người bán</a></li>
-            <li class="download-app">
+          <div class="navbar-list float--left">
+            <div><a href="">Kênh người bán</a></div>
+
+            <div class="line-y"></div>
+
+            <div><a href="">Trở thành Người bán Shopee</a></div>
+
+            <div class="line-y"></div>
+
+            <div class="download-app">
               <a href="">Tải ứng dụng</a>
               <div class="QR-draw__position">
                 <div class="QR-container">
@@ -48,13 +55,30 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li><a href="">Kết nối</a></li>
-          </ul>
+            </div>
 
-          <ul class="navbar-list float--right">
-            <li class="navbar-notify">
-              <a href="">Thông báo</a>
+            <div class="line-y"></div>
+
+            <div>
+              Kết nối
+              <a href="#"
+                ><i
+                  style="font-size: 1rem"
+                  class="fa-brands fa-square-facebook"
+                ></i
+              ></a>
+              <a href="#">
+                <i
+                  style="font-size: 1rem"
+                  class="fa-brands fa-square-instagram"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="navbar-list float--right">
+            <div class="navbar-notify">
+              <a href=""><i class="fa-regular fa-bell"></i> Thông báo</a>
               <div class="notify__container">
                 <div class="notify-header">Thông báo mới</div>
                 <ul class="notify-list">
@@ -149,46 +173,81 @@
                   <a href="">Xem tất cả</a>
                 </div>
               </div>
-            </li>
-            <li>
-              <a href="">Hỗ trợ</a>
-            </li>
-            <li class="navbar-language">
-              <a href="">Tiếng Việt</a>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div>
+              <a href=""
+                ><i class="fa-regular fa-circle-question"></i> Hỗ trợ</a
+              >
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="navbar-language">
+              <a href=""
+                ><i class="fa-solid fa-globe"></i> Tiếng Việt
+                <i class="fa-solid fa-chevron-down"></i
+              ></a>
               <div class="language__container">
                 <ul class="language__list">
                   <li class="language-item"><a href="#">Tiếng Việt</a></li>
                   <li class="language-item"><a href="#"> English</a></li>
                 </ul>
               </div>
-            </li>
-            <li><a href="">Tài khoản</a></li>
-          </ul>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div>
+              <a href=""> <b>Đăng ký</b> </a>
+            </div>
+
+            <div class="line-y"></div>
+            <div>
+              <a href=""> <b>Đăng nhập</b> </a>
+            </div>
+          </div>
         </nav>
 
         <div class="header-search grid">
-          <a href="" class="header-search__logo">
-            <img
-              class="lazada-logo"
-              src="./assets/img/Amazon_icon.png"
-              alt=""
-              srcset=""
-            />
-          </a>
+          <div class="header-search__logo">
+            <a href="#">
+              <img
+                class="lazada-logo"
+                src="./assets/img/Amazon_icon.png"
+                alt=""
+                srcset=""
+              />
+            </a>
+          </div>
 
           <div class="header-search__searchbar">
             <div class="searchbar">
-              <form action="search" class="form-search">
+              <form action="search" class="form-search flex-center">
                 <input
                   class="search-input"
                   type="text"
                   placeholder="Tìm kiếm gì đó bạn muốn"
                 />
-                <button class="search-button">
+                <div class="search-history">
+                  <div class="history-label">Lịch sử tìm kiếm</div>
+                  <ul class="history-list">
+                    <li class="history-item"><a href="#">Cu giả</a></li>
+                    <li class="history-item"><a href="#">Thuốc sổ</a></li>
+                    <li class="history-item">
+                      <a href="">Micro karaoke bị rung?</a>
+                    </li>
+                    <li class="history-item"><a href="">Durex vị dâu</a></li>
+                  </ul>
+                </div>
+                <a href="" class="search-button flex-center">
                   <i class="icon fa-solid fa-magnifying-glass"></i>
-                </button>
+                </a>
               </form>
             </div>
+
             <div class="suggest grid__row">
               <ul class="suggest-list">
                 <li><a href="">Surface 9</a></li>
@@ -203,10 +262,25 @@
             </div>
           </div>
 
-          <div class="header-search__cart">
-            <a href=""
-              ><i class="shopping-icon fa-solid fa-cart-shopping"></i
-            ></a>
+          <div class="header-search__cart flex-center">
+            <div class="cart">
+              <a href="">
+                <i class="shopping-icon fa-solid fa-cart-shopping"></i>
+              </a>
+              <div class="cart-products__list">
+                <div class="products-item__nothing hidden">
+                  <img
+                    class="products-nothing__img"
+                    src="./assets/img/cart-nothing.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="products-items__in-basket">
+                  <li class="products-item">cc</li>
+                  <li class="products-item">cl</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -220,7 +294,7 @@
 
     <section class="modal">
       <div class="modal__overlay"></div>
-      <div class="modal__container">
+      <div class="modal__container--sign-in">
         <div class="auth-form">
           <div class="form__header">
             <h3 class="form__title">Đăng ký</h3>
@@ -229,17 +303,17 @@
           <form class="form__body">
             <div class="input-group">
               <input
-                class="input__sign-in"
+                class="input__modal"
                 type="tel"
                 placeholder="Số điện thoại"
               />
               <input
-                class="input__sign-in"
+                class="input__modal"
                 type="text"
                 placeholder="Tạo mã ngẫu nhiên"
               />
               <input
-                class="input__sign-in"
+                class="input__modal"
                 type="text"
                 placeholder="Mã xác minh"
               />
@@ -252,8 +326,8 @@
               </p>
             </div>
             <div class="form__accept">
-              <button class="btn__back btn-primary">TRỞ LẠI</button>
-              <button class="btn__sign-in btn-primary">ĐĂNG KÝ</button>
+              <button class="btn__back btn-primary--medium">TRỞ LẠI</button>
+              <button class="btn__sign-in btn-primary--medium">ĐĂNG KÝ</button>
             </div>
           </form>
         </div>
@@ -265,6 +339,46 @@
           <a class="social google-social" href="#">
             <i class="social-icon fa-brands fa-google"></i>
             <span class="social-label">Kết nối với Google</span>
+          </a>
+        </div>
+      </div>
+      <div class="modal__container--log-in">
+        <div class="auth-form">
+          <div class="form__header">
+            <h3 class="form__title">Đăng nhập</h3>
+            <span class="swtch-btn"><a href="#">Đăng ký</a></span>
+          </div>
+          <form class="form__body">
+            <div class="input-group">
+              <input
+                class="input__modal"
+                type="tel"
+                placeholder="Email/Số điện thoại/Tên đăng nhập"
+              />
+              <input class="input__modal" type="text" placeholder="Mật khẩu" />
+            </div>
+            <div class="form__help">
+              <p>
+                <a class="forgot-pass" href="#">Quên mật khẩu</a>
+                <a class="help-pass" href="#">Cần trợ giúp?</a>
+              </p>
+            </div>
+            <div class="form__accept">
+              <button class="btn__back btn-primary--medium">TRỞ LẠI</button>
+              <button class="btn__sign-in btn-primary--medium">
+                ĐĂNG NHẬP
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="form__footer">
+          <a class="social facebook-social" href="#">
+            <i class="social-icon fa-brands fa-square-facebook"></i>
+            <span class="social-label">Đăng nhập với Facebook</span>
+          </a>
+          <a class="social google-social" href="#">
+            <i class="social-icon fa-brands fa-google"></i>
+            <span class="social-label">Đăng nhập với Google</span>
           </a>
         </div>
       </div>
