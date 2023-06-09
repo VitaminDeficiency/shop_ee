@@ -74,6 +74,9 @@
                 ></i>
               </a>
             </div>
+            <div class="user-accout">
+              <div class="avt-user"></div>
+            </div>
           </div>
 
           <div class="navbar-list float--right">
@@ -193,20 +196,41 @@
               <div class="language__container">
                 <ul class="language__list">
                   <li class="language-item"><a href="#">Tiếng Việt</a></li>
-                  <li class="language-item"><a href="#"> English</a></li>
+                  <li class="language-item"><a href="#">English</a></li>
                 </ul>
               </div>
             </div>
 
             <div class="spacer"></div>
 
-            <div>
+            <!-- <div>
               <a href=""> <b>Đăng ký</b> </a>
             </div>
 
             <div class="line-y"></div>
             <div>
               <a href=""> <b>Đăng nhập</b> </a>
+            </div> -->
+
+            <div class="user">
+              <a class="user-accout" href="">
+                <img class="avt-user" src="./assets/img/user.jpg" alt="" />
+                <span><b>Ý Nguyễn</b></span>
+              </a>
+              <div class="user-accout__container">
+                <ul class="user-accout__list">
+                  <li class="user-accout__item">
+                    <a href="#">Tài khoản của tôi</a>
+                  </li>
+                  <li class="user-accout__item">
+                    <a href="#">Địa chỉ của tôi</a>
+                  </li>
+                  <li class="user-accout__item"><a href="#">Đơn mua</a></li>
+                  <li class="user-accout__item user__log-out">
+                    <a href="#">Đăng xuất</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -281,45 +305,57 @@
                   <div class="products-header">Vật phẩm đã thêm</div>
                   <ul class="products-list">
                     <li class="products-item">
-                      <a href="#">
-                        <div>
-                          <img
-                            class="product-img"
-                            src="./assets/img/notify-3.png"
-                            alt=""
-                            srcset=""
-                          />
-                        </div>
-                        <div class="product-content">
-                          <div class="product-name">iPhone 14 Pro</div>
-                          <div class="product-describe">
-                            Phân loại: Đen, 1Tb
+                      <div class="product-img">
+                        <img
+                          class="product-img__item"
+                          src="./assets/img/notify-3.png"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                      <div class="product-content">
+                        <div class="product-name">
+                          <h4 class="product-label">iPhone 14 Pro</h4>
+                          <div class="price-group">
+                            <span class="price">27.000.000đ</span>
+                            <span class="x">x</span>
+                            <span class="number">1</span>
                           </div>
                         </div>
-                      </a>
+                        <div class="product-describe">
+                          Phân loại: Đen, 512Gb
+                        </div>
+                      </div>
                     </li>
                     <li class="products-item">
-                      <a href="#">
-                        <div>
-                          <img
-                            class="product-img"
-                            src="./assets/img/notify-2.png"
-                            alt=""
-                            srcset=""
-                          />
-                        </div>
-                        <div class="product-content">
-                          <div class="product-name">
-                            <div class="product-label">Macbook Air 15 inch</div>
-                            <div class="product-price">35.000.000đ</div>
+                      <div class="product-img">
+                        <img
+                          class="product-img__item"
+                          src="./assets/img/notify-2.png"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                      <div class="product-content">
+                        <div class="product-name">
+                          <h4 class="product-label">MacBook Air 15 inch</h4>
+                          <div class="price-group">
+                            <span class="price">35.000.000đ</span>
+                            <span class="x">x</span>
+                            <span class="number">2</span>
                           </div>
-                          <div class="product-describe">
-                            Phân loại: Star Light, 1Tb
-                          </div>
                         </div>
-                      </a>
+                        <div class="product-describe">
+                          Phân loại: Star Light, 1Tb
+                        </div>
+                      </div>
                     </li>
                   </ul>
+                  <div class="cart-products__seen">
+                    <button class="btn-primary--medium btn__seen-products">
+                      Xem giỏ hàng
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
