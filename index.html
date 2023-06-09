@@ -265,9 +265,11 @@
           <div class="header-search__cart flex-center">
             <div class="cart">
               <a href="">
-                <i class="shopping-icon fa-solid fa-cart-shopping"></i>
+                <i class="shopping-icon fa-solid fa-cart-shopping">
+                  <span class="number-products">3</span>
+                </i>
               </a>
-              <div class="cart-products__list">
+              <div class="cart-products__container">
                 <div class="products-item__nothing hidden">
                   <img
                     class="products-nothing__img"
@@ -275,10 +277,50 @@
                     alt=""
                   />
                 </div>
-                <ul class="products-items__in-basket">
-                  <li class="products-item">cc</li>
-                  <li class="products-item">cl</li>
-                </ul>
+                <div class="products-list__picked">
+                  <div class="products-header">Vật phẩm đã thêm</div>
+                  <ul class="products-list">
+                    <li class="products-item">
+                      <a href="#">
+                        <div>
+                          <img
+                            class="product-img"
+                            src="./assets/img/notify-3.png"
+                            alt=""
+                            srcset=""
+                          />
+                        </div>
+                        <div class="product-content">
+                          <div class="product-name">iPhone 14 Pro</div>
+                          <div class="product-describe">
+                            Phân loại: Đen, 1Tb
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#">
+                        <div>
+                          <img
+                            class="product-img"
+                            src="./assets/img/notify-2.png"
+                            alt=""
+                            srcset=""
+                          />
+                        </div>
+                        <div class="product-content">
+                          <div class="product-name">
+                            <div class="product-label">Macbook Air 15 inch</div>
+                            <div class="product-price">35.000.000đ</div>
+                          </div>
+                          <div class="product-describe">
+                            Phân loại: Star Light, 1Tb
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

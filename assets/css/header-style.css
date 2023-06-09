@@ -229,22 +229,36 @@
   height: auto;
 }
 
+/* tab <a> cart, click to url */
 .cart > a {
   font-size: 1.5rem;
   color: var(--white-color);
 }
 
 .shopping-icon {
+  position: relative;
   margin-bottom: 10px;
 }
 
-.cart-products__list {
+.number-products {
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  font-size: 0.6rem;
+  padding: 2px 7px;
+  border-radius: 15px;
+  border: 3px solid var(--orange-color);
+  color: #f53d2d;
+  background: var(--white-color);
+}
+
+.cart-products__container {
   display: none;
   position: absolute;
   top: 55px;
   right: 35px;
   width: 400px;
-  height: 300px;
+  height: auto;
   border-radius: 3px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
@@ -253,11 +267,11 @@
   z-index: 7;
 }
 
-.cart:hover .cart-products__list {
+.cart:hover .cart-products__container {
   display: block;
 }
 
-.cart-products__list::before {
+.cart-products__container::before {
   content: "";
   border-width: 10px 15px;
   border-style: solid;
@@ -267,7 +281,7 @@
   right: 24px;
 }
 
-.cart-products__list::after {
+.cart-products__container::after {
   content: "";
   display: block;
   width: 90px;
@@ -292,8 +306,21 @@
   /* margin: auto; */
 }
 
-.products-items__in-basket > .products-item {
-  background-color: #f53d2d;
+.products-list__picked {
+  width: 100%;
+}
+
+.product-content {
+  width: 100%;
+}
+
+.product-name {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.product-label {
 }
 
 .notify__container {
@@ -337,6 +364,7 @@
   height: 20px;
 }
 
+.products-header,
 .notify-header {
   font-size: 1 rem;
   width: auto;
@@ -347,6 +375,7 @@
   color: var(--text-color-opacity);
 }
 
+.products-list,
 .notify-list {
   flex-direction: column;
   padding-left: 10px;
@@ -354,6 +383,7 @@
   margin: 0;
 }
 
+.products-item,
 .notify-item {
   width: 100%;
   display: flex;
@@ -361,6 +391,7 @@
   background-color: #fff2ee;
 }
 
+.products-item > a,
 .notify-item > a {
   display: flex;
   color: var(--text-color);
@@ -373,16 +404,25 @@
 .notify-img {
 }
 
+.product-img,
+.img-notify {
+  width: 40px;
+  height: auto;
+}
+
+.product-content,
 .notify-content {
   padding: 0 10px;
 }
 
+.product-name,
 .notify-name {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
+.product-describe,
 .notify-describe {
   font-size: 0.75rem;
   margin-bottom: 5px;

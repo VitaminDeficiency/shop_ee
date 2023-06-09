@@ -48,11 +48,6 @@ html {
   float: right;
 }
 
-.img-notify {
-  width: 40px;
-  height: auto;
-}
-
 .line-y {
   border-right: 1px solid hsla(0, 0%, 100%, 0.4);
   border-right-width: 2px;
