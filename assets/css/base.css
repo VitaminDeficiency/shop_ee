@@ -58,7 +58,7 @@ html {
 
 .spacer-small {
   height: 0.8125rem;
-  width: 1rem;
+  width: 0.5rem; /* 12px */
 }
 
 .modal {
