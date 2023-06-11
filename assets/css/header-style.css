@@ -295,10 +295,6 @@
   display: block;
 }
 
-.search-select__item {
-  /* font-size: 0.875rem; */
-}
-
 .search-select__item > a {
   padding: 5px 6px;
   color: var(--text-color);
@@ -515,7 +511,7 @@
   display: flex;
   align-items: center;
   padding: 0 10px;
-  color: var(--text-color-opacity);
+  color: var(--gray-color);
 }
 
 .products-list,
@@ -534,7 +530,7 @@
 
 .user-accout__item,
 .products-item {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .products-item > a,

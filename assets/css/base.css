@@ -2,8 +2,9 @@
   --white-color: #fff;
   --black-color: #000;
   --orange-color: #ec4429;
-  --text-color: #333;
-  --text-color-opacity: #bdbdbd;
+  --gray-color: #bdbdbd;
+  --gray-color-child: #ededed;
+  --text-color: #313131;
   --orange-hover-color: #fabbc1;
 }
 
@@ -32,6 +33,21 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.grid__col {
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid__col--2 {
+  padding: 0 12px;
+  width: 16.667%;
+}
+
+.grid__col--10 {
+  padding: 0 12px;
+  width: 83.333%;
 }
 
 .flex-center {
@@ -72,7 +88,7 @@ html {
 }
 
 .btn-primary--medium {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   height: 32px;
   padding: 0px 30px;
   border: 0;

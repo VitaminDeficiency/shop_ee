@@ -14,8 +14,9 @@
     ></script>
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/header-style.css" />
     <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/header-style.css" />
+    <link rel="stylesheet" href="./assets/css/container-style.css" />
     <title>Shop</title>
   </head>
   <body>
@@ -376,13 +377,96 @@
       </header>
 
       <div class="container">
-        <section class="section"></section>
+        <div class="container-child grid">
+          <div class="grid__row">
+            <div class="grid__col--2">
+              <div class="category">
+                <div class="category-header">
+                  <h3 class="category__title">
+                    <i class="category__title--icon fa-solid fa-list"></i>
+                    Danh mục
+                  </h3>
+                </div>
+                <ul class="catelory__list">
+                  <li class="category__item">
+                    <a href="#">
+                      <i class="fa-solid fa-caret-right cater-right"></i>
+                      Điện thoại
+                    </a>
+                  </li>
+                  <li class="category__item">
+                    <a href="#"
+                      ><i class="fa-solid fa-caret-right cater-right"></i>
+                      Laptop
+                    </a>
+                  </li>
+                  <li class="category__item">
+                    <a href="#"
+                      ><i class="fa-solid fa-caret-right cater-right"></i>
+                      Taplet
+                    </a>
+                  </li>
+                  <li class="category__item">
+                    <a href="#"
+                      ><i class="fa-solid fa-caret-right cater-right"></i>
+                      Tai nghe
+                    </a>
+                  </li>
+                  <li class="category__item">
+                    <a href="#"
+                      ><i class="fa-solid fa-caret-right cater-right"></i>
+                      Phụ kiện
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid__col--10">
+              <div class="filter-header">
+                <div class="filter-title">
+                  <span class="filter-title">Sắp xếp theo</span>
+                </div>
+                <div class="filter-sort-option">
+                  <button
+                    class="filter-popular btn__filter btn-primary--medium"
+                  >
+                    Phổ biến
+                  </button>
+                  <button class="filter-newest btn__filter btn-primary--medium">
+                    Mới nhất
+                  </button>
+                  <button
+                    class="filter-selling btn__filter btn-primary--medium"
+                  >
+                    Bán chạy
+                  </button>
+                </div>
+                <div class="filter-page-controller flex-center">
+                  <div class="page-state">
+                    <span class="page-state__present">1</span>
+                    /
+                    <span class="page-state__total">1</span>
+                  </div>
+                  <div class="page-button-controller">
+                    <button class="page-button page-button__previous">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="page-button page-button__next">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer class="footer"></footer>
     </section>
 
-    <section class="modal">
+    <!-- <section class="modal">
       <div class="modal__overlay"></div>
       <div class="modal__container--sign-in">
         <div class="auth-form">
@@ -472,6 +556,6 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
   </body>
 </html>
