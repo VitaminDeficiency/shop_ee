@@ -4,6 +4,7 @@
   --orange-color: #ec4429;
   --gray-color: #bdbdbd;
   --gray-color-child: #ededed;
+  --yellow-color: #ffce3d;
   --text-color: #313131;
   --orange-hover-color: #fabbc1;
 }
@@ -30,30 +31,49 @@ html {
   width: 100%;
 }
 
+/* Định dạng lớp này thành hàng */
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+
+  /* Cho con của lớp này không bị thụt vào 12px từ padding */
+  margin: 0 -5px;
 }
 
+/* Định dạng lớp này thành cột */
 .grid__col {
   flex-direction: column;
   width: 100%;
 }
 
 .grid__col--2 {
-  padding: 0 12px;
-  width: 16.667%;
+  padding: 0 5px;
+  width: 16.666%;
+}
+
+.grid__col--2-4 {
+  padding: 0 5px;
+  width: 20%;
 }
 
 .grid__col--10 {
-  padding: 0 12px;
-  width: 83.333%;
+  padding: 0 5px;
+  width: 83.334%;
+}
+
+.grid__col--12 {
+  padding: 0 5px;
+  width: 20%;
 }
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .float--left {
@@ -90,8 +110,8 @@ html {
 .btn-primary--medium {
   font-size: 0.875rem;
   height: 32px;
-  padding: 0px 30px;
+  padding: 0px 25px;
   border: 0;
-  border-radius: 3px;
+  border-radius: 2px;
   line-height: 0;
 }

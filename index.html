@@ -21,7 +21,7 @@
   </head>
   <body>
     <section class="app">
-      <header class="header grid__row">
+      <header class="header grid__row no-margin">
         <nav class="header-navbar grid">
           <div class="navbar-list float--left">
             <div><a href="">Kênh người bán</a></div>
@@ -307,58 +307,60 @@
                 </i>
               </a>
               <div class="cart-products__container">
-                <div class="products-item__nothing hidden">
+                <div class="cart-products-item__nothing hidden">
                   <img
                     class="products-nothing__img"
                     src="./assets/img/cart-nothing.png"
                     alt=""
                   />
                 </div>
-                <div class="products-list__picked">
-                  <div class="products-header">Vật phẩm đã thêm</div>
-                  <ul class="products-list">
-                    <li class="products-item">
-                      <div class="product-img">
+                <div class="cart-products-list__picked">
+                  <div class="cart-products-header">Vật phẩm đã thêm</div>
+                  <ul class="cart-products-list">
+                    <li class="cart-products-item">
+                      <div class="cart-product-img">
                         <img
-                          class="product-img__item"
+                          class="cart-product-img__item"
                           src="./assets/img/notify-3.png"
                           alt=""
                           srcset=""
                         />
                       </div>
-                      <div class="product-content">
-                        <div class="product-name">
-                          <h4 class="product-label">iPhone 14 Pro</h4>
-                          <div class="price-group">
-                            <span class="price">27.000.000đ</span>
-                            <span class="x">x</span>
-                            <span class="number">1</span>
+                      <div class="cart-product-content">
+                        <div class="cart-product-name">
+                          <h4 class="cart-product-label">iPhone 14 Pro</h4>
+                          <div class="cart-price-group">
+                            <span class="cart-price">27.000.000đ</span>
+                            <span class="cart-x">x</span>
+                            <span class="cart-number">1</span>
                           </div>
                         </div>
-                        <div class="product-describe">
+                        <div class="cart-product-describe">
                           Phân loại: Đen, 512Gb
                         </div>
                       </div>
                     </li>
-                    <li class="products-item">
-                      <div class="product-img">
+                    <li class="cart-products-item">
+                      <div class="cart-product-img">
                         <img
-                          class="product-img__item"
+                          class="cart-product-img__item"
                           src="./assets/img/notify-2.png"
                           alt=""
                           srcset=""
                         />
                       </div>
-                      <div class="product-content">
-                        <div class="product-name">
-                          <h4 class="product-label">MacBook Air 15 inch</h4>
-                          <div class="price-group">
-                            <span class="price">35.000.000đ</span>
-                            <span class="x">x</span>
-                            <span class="number">2</span>
+                      <div class="cart-product-content">
+                        <div class="cart-product-name">
+                          <h4 class="cart-product-label">
+                            MacBook Air 15 inch
+                          </h4>
+                          <div class="cart-price-group">
+                            <span class="cart-price">35.000.000đ</span>
+                            <span class="cart-x">x</span>
+                            <span class="cart-number">2</span>
                           </div>
                         </div>
-                        <div class="product-describe">
+                        <div class="cart-product-describe">
                           Phân loại: Star Light, 1Tb
                         </div>
                       </div>
@@ -416,6 +418,20 @@
                     <a href="#"
                       ><i class="fa-solid fa-caret-right cater-right"></i>
                       Phụ kiện
+                      <ul class="accessories__list">
+                        <li class="accessories__item">
+                          <a href="#" class="charger">Củ sạc</a>
+                        </li>
+                        <li class="accessories__item">
+                          <a href="#" class="charger-cord">Dây sạc</a>
+                        </li>
+                        <li class="accessories__item">
+                          <a href="#" class="backup-charger">Sạc dự phòng</a>
+                        </li>
+                        <li class="accessories__item">
+                          <a href="#" class="memory">Thẻ nhớ</a>
+                        </li>
+                      </ul>
                     </a>
                   </li>
                 </ul>
@@ -428,7 +444,7 @@
                 </div>
                 <div class="filter-sort-option">
                   <button
-                    class="filter-popular btn__filter btn-primary--medium"
+                    class="filter-popular btn__filter btn-primary--medium btn__filter--active"
                   >
                     Phổ biến
                   </button>
@@ -440,6 +456,20 @@
                   >
                     Bán chạy
                   </button>
+                  <div class="filter-price-sort btn-primary--medium">
+                    Giá
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="filter-price-sort__container">
+                      <ul class="price__list">
+                        <li class="price__item">
+                          <a href="#">Giá: Thấp đến Cao</a>
+                        </li>
+                        <li class="price__item">
+                          <a href="#">Giá: Cao đến Thấp</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="filter-page-controller flex-center">
                   <div class="page-state">
@@ -456,6 +486,69 @@
                       <i class="fa-solid fa-chevron-right"></i>
                     </button>
                   </div>
+                </div>
+              </div>
+
+              <div class="products">
+                <div class="grid__row">
+                  <div class="grid__col--2-4">
+                    <div class="product-item-container">
+                      <img
+                        class="product-item-img"
+                        src="https://down-vn.img.susercontent.com/file/542fbfd60735baef54fd02eb14179f1b_tn"
+                        alt=""
+                      />
+                      <div class="product-item-details__container">
+                        <h6 class="product-item-title">
+                          Camera Xiaomi xoay 360 độ 1080p NHẬP KHẨU CHÍNH HÃNG
+                        </h6>
+                        <div class="product-item-discount__container">
+                          <div class="discount">Giảm 10%</div>
+                          <div class="trending">#ShopXuHuong</div>
+                        </div>
+                        <div class="product-item-price">
+                          <span>799.000</span>
+                          <span>599.000</span>
+                        </div>
+                        <div class="product-item-rating">
+                          <div class="star-rating">
+                            <i
+                              class="fa-solid fa-star icon-star yellow-star"
+                            ></i>
+                            <i
+                              class="fa-solid fa-star icon-star yellow-star"
+                            ></i>
+                            <i
+                              class="fa-solid fa-star icon-star yellow-star"
+                            ></i>
+                            <i
+                              class="fa-solid fa-star icon-star yellow-star"
+                            ></i>
+                            <i
+                              class="fa-solid fa-star icon-star yellow-star"
+                            ></i>
+                            <i class="fa-solid fa-star icon-star"></i>
+                          </div>
+                          <div class="spacer-small"></div>
+                          <div class="sold">Đã bán 4,3k</div>
+                        </div>
+                        <div class="product-location">Tp. Hồ Chí Minh</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="grid__col--2-4">
+                    <div class="product-item-container"></div>
+                  </div>
+                  <div class="grid__col--2-4">
+                    <div class="product-item-container"></div>
+                  </div>
+                  <div class="grid__col--2-4">
+                    <div class="product-item-container"></div>
+                  </div>
+                  <div class="grid__col--2-4">
+                    <div class="product-item-container"></div>
+                  </div> -->
                 </div>
               </div>
             </div>
