@@ -1,0 +1,27 @@
+.footer {
+  background-color: #fbfbfb;
+}
+
+.footer__grid {
+  padding-top: 32px;
+  border-top: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.header-infomation {
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.infomation-list {
+  padding: 0;
+}
+
+.infomation-item {
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin-top: 10px;
+  text-transform: none;
+}

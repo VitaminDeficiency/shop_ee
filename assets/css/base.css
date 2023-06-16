@@ -3,6 +3,7 @@
   --black-color: #000;
   --orange-color: #ec4429;
   --gray-color: #bdbdbd;
+  --gray-color-deep: #7c7c7c;
   --gray-color-child: #ededed;
   --yellow-color: #ffce3d;
   --text-color: #313131;
@@ -51,7 +52,7 @@ html {
   width: 16.666%;
 }
 
-.grid__col--2-4 {
+.grid__col--5 {
   padding: 0 5px;
   width: 20%;
 }
