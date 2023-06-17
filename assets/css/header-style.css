@@ -211,6 +211,10 @@
   border: 3px solid var(--white-color);
 }
 
+.search-button:hover {
+  background-color: var(--btn-orange-hover);
+}
+
 .search-history__container {
   display: none;
   position: absolute;
@@ -461,7 +465,7 @@
 }
 
 .btn__seen-products:hover {
-  background-color: var(--orange-hover-color);
+  background-color: var(--btn-orange-hover);
 }
 
 .notify__container {

@@ -101,6 +101,7 @@
 
 .btn__filter {
   margin-right: 10px;
+  cursor: pointer;
   color: var(--text-color);
   background-color: var(--white-color);
 }
@@ -118,6 +119,7 @@
   justify-content: space-between;
   line-height: 0;
   padding: 12px;
+  cursor: pointer;
   background-color: var(--white-color);
 }
 
@@ -183,10 +185,21 @@
   line-height: 0;
   width: 34px;
   height: 32px;
+  margin-right: -4px;
   border: 1px solid #cccccc;
   border-radius: 3px;
   color: #cccccc;
   background-color: #f5f5f5;
+}
+
+.btn-page-availability {
+  color: var(--text-color);
+  background-color: var(--gray-color-child);
+  cursor: pointer;
+}
+
+.btn-page-availability:hover {
+  background-color: var(--white-color);
 }
 
 /* ---------- Product item ---------- */
@@ -390,6 +403,10 @@
   padding-bottom: 50px;
 }
 
+.pagination a {
+  color: var(--gray-color-deep);
+}
+
 .pagination-list {
   display: flex;
   justify-content: center;
@@ -398,12 +415,7 @@
   margin: auto;
 }
 
-.pagination-item__arrow {
-  font-size: 0.875rem;
-  margin: 0 32px;
-  color: var(--gray-color-deep);
-}
-
+.pagination-item__arrow,
 .pagination-item {
   font-size: 1.2rem;
   height: 32px;
@@ -414,10 +426,15 @@
   padding: 0px 15px;
   margin: 0 16px;
   border-radius: 2px;
+  cursor: pointer;
+}
+.dots {
+  cursor: default;
+  color: var(--gray-color-deep);
 }
 
-.pagination-item > a {
-  color: var(--gray-color-deep);
+.pagination-item__arrow {
+  font-size: 0.75rem;
 }
 
 .pagination-item--active {
@@ -426,4 +443,8 @@
 
 .pagination-item--active > a {
   color: var(--white-color);
+}
+
+.pagination-item--active:hover {
+  background-color: var(--btn-orange-hover);
 }

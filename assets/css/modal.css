@@ -5,7 +5,7 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
-  /* display: none; */
+  display: none;
 }
 
 .modal__container--log-in,
@@ -15,12 +15,12 @@
 }
 
 .modal__container--sign-in {
-  /* display: none; */
+  display: none;
   z-index: 6;
 }
 
 .modal__container--log-in {
-  /* display: none; */
+  display: none;
   z-index: 7;
 }
 
@@ -101,6 +101,7 @@
 }
 
 .btn__back:hover {
+  cursor: pointer;
   color: var(--text-color);
   background-color: #f3f3f3;
 }
@@ -112,7 +113,8 @@
 }
 
 .btn__sign-in:hover {
-  background-color: var(--orange-hover-color);
+  cursor: pointer;
+  background-color: var(--btn-orange-hover);
 }
 
 .form__footer {
