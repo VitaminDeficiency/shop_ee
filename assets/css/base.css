@@ -52,9 +52,19 @@ html {
   width: 16.666%;
 }
 
+.grid__col--3 {
+  padding: 0 5px;
+  width: 33.333%;
+}
+
 .grid__col--5 {
   padding: 0 5px;
   width: 20%;
+}
+
+.grid__col--6 {
+  padding: 0 5px;
+  width: 50%;
 }
 
 .grid__col--10 {
@@ -85,11 +95,32 @@ html {
   float: right;
 }
 
+.margin--20 {
+  margin-right: 25px;
+}
+
+.padding-bottom--30 {
+  padding-bottom: 30px;
+}
+
+.line-x {
+  border-top: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--gray-color);
+}
+
 .line-y {
   border-right: 1px solid hsla(0, 0%, 100%, 0.4);
   border-right-width: 2px;
   border-right-style: solid;
   border-right-color: rgba(255, 255, 255, 0.4);
+  height: 0.8125rem;
+}
+
+.line-y-footer {
+  border-right: 1px solid hsla(0, 0%, 100%, 0.4);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(58, 58, 58, 0.4);
   height: 0.8125rem;
 }
 
